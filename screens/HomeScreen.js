@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar'
 import * as Icon from "react-native-feather";
 import { themColors } from '../theme';
 import Categories from '../components/categories';
-import { featured } from '../constants';
+import { featured, featured1, featured2 } from '../constants';
 import FeaturedRow from '../components/featuredRow';
 
 export default function HomeScreen() {
@@ -34,7 +34,7 @@ export default function HomeScreen() {
         <Categories/>
         <View className="mt-5">
             {
-                [featured,featured,featured].map((item,index)=>{
+                [featured,featured1,featured2].map((item,index)=>{
                     return (
                     <FeaturedRow
                     key={index}
